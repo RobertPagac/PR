@@ -148,7 +148,7 @@ chrome.storage.local.get(['isLightMode'], async function(result) {
     }
 });
 async function findUserSettings(username) {
-    const url = 'http://localhost/db1/userSettings.php'; //https://passrem.000webhostapp.com/userSettings.php
+    const url = 'https://passrem.000webhostapp.com/userSettings.php'; //https://passrem.000webhostapp.com/userSettings.php
     const data = new FormData();
     data.append('username', username);
   
@@ -297,7 +297,7 @@ saveBtn.addEventListener('click', async function() {
 });
 
 async function sendDataToPHP(username, password) {
-  const url = 'http://localhost/db1/script.php'; //https://passrem.000webhostapp.com/script.php
+  const url = 'https://passrem.000webhostapp.com/script.php'; //https://passrem.000webhostapp.com/script.php
   const data = new FormData();
   data.append('username', username);
   data.append('password', password);
