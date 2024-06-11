@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Password</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body class="mode">
+    <button id="backbutton" class="backbtn">&lt</button>
+    <div class="dropdown">
+        <button id="delete" class="options">
+            <img src="delete.png" alt="Options" class="option-image">
+        </button>
+    </div>
+    <form id="editForm">
+        <h1 id="oldurl"></h1>
+        <p id="error_message"></p>
+        <label for="website">Website:</label>
+        <input type="website" id="website" name="website" class="mode" spellcheck="false" required><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" class="mode" spellcheck="false"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="mode"><br><br>
+        
+        <label for="password">Password:
+            <span class="registration-link" id="generateLink">generate?</span>
+          </label>
+        <input type="password" id="password" name="password" class="mode" required><br><br>
+        <div id="password-strength"></div>
+
+        <label for="expire_date">Expire Date:</label>
+        <input type="date" id="expire_date" name="expire_date" class="mode" required><br><br>
+
+        <input type="submit" value="Save">
+        
+    </form>
+    <button type="button" id="togglePassword" class="togglePassword2"><img id="toggleImage" src="showw.png" class="show-image2"></button><br><br>
+
+</body>
+</html>

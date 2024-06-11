@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css">
+    <script type="module" src="setting.js" defer></script>
+</head>
+<body id="body">
+    <div class="container">
+        <header>
+            <h1>Settings</h1>
+        </header>
+        <main>
+            <p id="error_message" class="em"></p>
+            <section>
+                <h2>General Settings</h2>
+                <div class="setting">
+                    <label for="username">Username: </label>
+                    <input type="username" id="username" autocomplete="additional-name">
+                </div>
+                <div class="setting">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" autocomplete="email">
+                </div>
+                <div class="setting">
+                    <label for="oldPassword">Old Master Password:</label>
+                    <input type="password" id="oldPassword">
+                    <button id="toggle-password" class="button">Show Password</button>
+                </div>
+                <div class="setting">
+                    <label for="newPassword">New Master password:</label>
+                    <input type="password" id="newPassword">
+                    <button id="toggle-password2" class="button">Show Password</button>
+                </div>
+                <div class="setting">
+                    <label for="newPassword2">New Master password:</label>
+                    <input type="password" id="newPassword2">
+                    <button id="toggle-password3" class="button">Show Password</button>
+                </div>
+                    <div>
+                <div class="setting">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="changeMode">
+                        <label for="changeMode"> Dark Mode</label>
+                    </div>
+                </div>
+                <div class="setting">
+                    <label for="fileinput"> Import Passwords (.csv format)</label>
+                <input type="file" id="fileInput" accept=".csv">
+                <button id="importButton" class="button">Import</button>
+                </div>
+                <div id="statusMessage"></div>
+            </section>
+            <section>
+                <h2>Advanced Settings</h2>
+                <div>
+                    <label for="passLength">Generated password length (6 - 99):</label>
+                    <input type="number" id="passLength" class="passLength" min="6" max="99">
+                </div>
+                <br>
+                <div class="setting">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="lc">
+                        <label for="lc"> Lowercase characters</label>
+                    </div>
+                </div>
+                <div class="setting">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="uc">
+                        <label for="uc"> Uppercase characters</label>
+                    </div>
+                </div>
+                <div class="setting">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="num">
+                        <label for="num"> Numbers</label>
+                    </div>
+                </div>
+                <div class="setting">
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="special">
+                        <label for="special">Special symbols</label>
+                    </div>
+                </div>
+        
+            </section>
+            <button id="save" class="button">Save</button>
+        </main>
+    </div>
+</body>
+</html>
