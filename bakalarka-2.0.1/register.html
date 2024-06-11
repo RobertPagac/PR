@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body class="mode">
+    <button id="backbutton" class="backbtn">&lt</button>
+    <div class="dropdown">
+        <button id="options" class="options">
+            <img src="opt.png" alt="Options" class="option-image">
+        </button>
+        <div class="dropdown-content mode" id="myDropdown">
+            <a id="modebutton" class="mode"><img src="mode.png" alt="mode" class="settings-image"> Light mode</a>
+            <a href="#" class="mode"><img src="settings.png" alt="Settings" class="settings-image"> Settings</a>
+            <a id="logoutbutton" href="#" class="mode"><img src="logout.png" alt="Logout" class="settings-image"> Logout</a>
+        </div>
+    </div>
+    <form id="registerForm" action="http://localhost/db1/register.php" method="POST">
+        <h1>Register</h1>
+        <p id="error_message"></p>
+        <label for="username">Username:</label>
+        <input class="mode"type="text" id="username" name="username" spellcheck="false" required>
+        <br>
+        <label for="email">Email:</label>
+        <input class="mode"type="email" id="email" name="imail" required>
+        <br>
+        <label for="password">Master Password:</label>
+        <input class="mode"type="password" id="password" name="password" required>
+        <br>
+        <label for="password">Repeat Master Password:</label>
+        <input class="mode" type="password" id="secondpassword" name="secondpassword" required>
+        <br>
+        <label for="help">Master Password Hint:
+            <span class="tooltip">?
+                <span class="tooltiptext">This hint will help you recover your master password if you forget it. Make sure it's something memorable but not easily guessable.</span>
+            </span>
+        </label>
+        <input class="mode" type="text" id="help" name="help" spellcheck="false" required>
+        <br>
+        <div></div>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
