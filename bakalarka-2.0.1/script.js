@@ -72,7 +72,7 @@ loginForm.addEventListener('submit', async function (event) {
   }
 });
 async function sendDataToPHP(username, password) {
-  const url = 'http://localhost/db1/script.php'; //https://passrem.000webhostapp.com/script.php
+  const url = 'https://passrem.000webhostapp.com/script.php'; //https://passrem.000webhostapp.com/script.php
   const data = new FormData();
   data.append('username', username);
   data.append('password', password);
@@ -137,7 +137,7 @@ if(document.getElementById('forgotForm') != null){
 
 
 async function sendDataToPHP(username, email, password, key, help) {
-  const url = 'http://localhost/db1/register.php'; //https://passrem.000webhostapp.com/register.php
+  const url = 'https://passrem.000webhostapp.com/register.php'; //https://passrem.000webhostapp.com/register.php
   const data = new FormData();
   data.append('username', username);
   data.append('email', email);
@@ -154,7 +154,7 @@ async function sendDataToPHP(username, email, password, key, help) {
 }
 
 async function findEmail(username) {
-  const url = 'http://localhost/db1/find_email.php'; //https://passrem.000webhostapp.com/find_email.php
+  const url = 'https://passrem.000webhostapp.com/find_email.php'; //https://passrem.000webhostapp.com/find_email.php
   const data = new FormData();
   data.append('username', username);
 
@@ -370,7 +370,7 @@ document.getElementById('password').value = params['Password'] || '';
 
 
 async function findUserData(username, offset) {
-  let url = 'http://localhost/db1/userData.php'; //https://passrem.000webhostapp.com/userData.php
+  let url = 'https://passrem.000webhostapp.com/userData.php'; //https://passrem.000webhostapp.com/userData.php
   let data = new FormData();
   data.append('username', username);
   data.append('offset', offset);
@@ -591,7 +591,7 @@ function base64ToArrayBuffer(base64String) {
 }
 
 async function getKey(user) {
-  const databaseurl = 'http://localhost/db1/getKey.php'; //https://passrem.000webhostapp.com/getKey.php
+  const databaseurl = 'https://passrem.000webhostapp.com/getKey.php'; //https://passrem.000webhostapp.com/getKey.php
   const data = new FormData();
   data.append('user', user);
 
@@ -604,7 +604,7 @@ async function getKey(user) {
 }
 
 async function addPassword(user, url, username, email, password, iv) {
-  const databaseurl = 'http://localhost/db1/add.php'; //https://passrem.000webhostapp.com/add.php
+  const databaseurl = 'https://passrem.000webhostapp.com/add.php'; //https://passrem.000webhostapp.com/add.php
   const data = new FormData();
   data.append('user', user);
   data.append('url', url);
@@ -645,7 +645,7 @@ if(document.getElementById('delete') != null){
 }
 
 async function deletePassword(user, url) {
-  const databaseurl = 'http://localhost/db1/delete.php'; //https://passrem.000webhostapp.com/delete.php
+  const databaseurl = 'https://passrem.000webhostapp.com/delete.php'; //https://passrem.000webhostapp.com/delete.php
   const data = new FormData();
   data.append('user', user);
   data.append('url', url);
@@ -759,7 +759,7 @@ if(document.getElementById('editForm') != null){
 });
 }
 async function editPassword(user, oldurl, url, username, email, password, expire_date, iv) {
-  const databaseurl = 'http://localhost/db1/edit.php'; //https://passrem.000webhostapp.com/edit.php
+  const databaseurl = 'https://passrem.000webhostapp.com/edit.php'; //https://passrem.000webhostapp.com/edit.php
   const data = new FormData();
   data.append('user', user);
   data.append('oldurl', oldurl);
@@ -836,7 +836,7 @@ async function decryptPassword(encryptedData, key, iv) {
 
 
 async function saveKey(user, key) {
-  const databaseurl = 'http://localhost/db1/putKey.php'; //https://passrem.000webhostapp.com/putKey.php
+  const databaseurl = 'https://passrem.000webhostapp.com/putKey.php'; //https://passrem.000webhostapp.com/putKey.php
   const data = new FormData();
   data.append('user', user);
   data.append('key', Array.from(new Uint8Array(key)).join(','));
@@ -981,7 +981,7 @@ function checkPasswordStrength(password) {
 }
 
 async function findUserSettings(username) {
-  const url = 'http://localhost/db1/userSettings.php'; //https://passrem.000webhostapp.com/userSettings.php.php
+  const url = 'https://passrem.000webhostapp.com/userSettings.php'; //https://passrem.000webhostapp.com/userSettings.php
   const data = new FormData();
   data.append('username', username);
 
