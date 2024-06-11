@@ -420,7 +420,7 @@ function arrayBufferToBase64(arrayBuffer) {
   }
   
   async function getKey(user) {
-    const databaseurl = 'http://localhost/db1/getKey.php'; //https://passrem.000webhostapp.com/getKey.php
+    const databaseurl = 'https://passrem.000webhostapp.com/getKey.php'; //https://passrem.000webhostapp.com/getKey.php
     const data = new FormData();
     data.append('user', user);
   
@@ -433,7 +433,7 @@ function arrayBufferToBase64(arrayBuffer) {
   }
   
   async function addPassword(user, url, username, email, password, iv) {
-    const databaseurl = 'http://localhost/db1/add.php'; //https://passrem.000webhostapp.com/add.php
+    const databaseurl = 'https://passrem.000webhostapp.com/add.php'; //https://passrem.000webhostapp.com/add.php
     const data = new FormData();
     data.append('user', user);
     data.append('url', url);
