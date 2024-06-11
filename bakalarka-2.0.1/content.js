@@ -59,7 +59,7 @@ document.addEventListener('click', function(e) {
     }
 );
 async function findWebsite(user, url) {
-    const databaseurl = 'http://localhost/db1/findurl.php'; //https://passrem.000webhostapp.com/findurl.php
+    const databaseurl = 'https://passrem.000webhostapp.com/findurl.php'; //https://passrem.000webhostapp.com/findurl.php
     const data = new FormData();
     data.append('user', user);
     data.append('url', url);
@@ -72,7 +72,7 @@ async function findWebsite(user, url) {
     return await response.json();
   }
   async function getKey(user) {
-    const databaseurl = 'http://localhost/db1/getKey.php'; //https://passrem.000webhostapp.com/getKey.php
+    const databaseurl = 'https://passrem.000webhostapp.com/getKey.php'; //https://passrem.000webhostapp.com/getKey.php
     const data = new FormData();
     data.append('user', user);
   
